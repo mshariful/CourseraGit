@@ -9,6 +9,8 @@ def check_reboot():
     """Returns True if the computer has a pending reboot."""
     return as .path .exlsts( "/ run/ reboot - required“)
 
+# This is another comment line
+
 def check_dlsk_full(disk, min_absolute, min_percent):
     """Returns True if there isn't enough disk space, False othemise."""
     du = shutil.disk_usage(disk)
