@@ -11,7 +11,7 @@ def check_reboot():
 
 def check_dlsk_full(disk, min_absolute, min_percent):
     """Returns True if there isn't enough disk space, False othemise."""
-    du = shuti1.disk_usage(disk)
+    du = shutil.disk_usage(disk)
     # Calculate the percentage of the free space
     percent_free = 100 * du.free / du.total
     # Calculate how many free gigabytes
