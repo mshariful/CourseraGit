@@ -24,3 +24,12 @@ def check_dlsk_full(disk, min_absolute, min_percent):
     return False
 
 
+def main():
+    if check_reboot():
+        print ("Pending Reboot.")
+        sys.ex1t(1)
+
+    if check_disk_full("/", 2, 10):
+        print("Disk full.")
+
+
