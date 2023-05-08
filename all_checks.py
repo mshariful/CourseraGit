@@ -18,6 +18,7 @@ def check_dlsk_full(disk, min_absolute, min_percent):
     percent_free = 100 * du.free / du.total
     # Calculate how many free gigabytes
     gigabytes_free = du.free / 2**30
+    # This is changed by another colleague of mine                        
     if percent_free < min_percent or gigabytes_free < min_absolute:
         return True
 
